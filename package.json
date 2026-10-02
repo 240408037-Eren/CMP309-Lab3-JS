@@ -1,0 +1,12 @@
+{
+  "name": "cmp309-assignment3-university-management",
+  "version": "1.0.0",
+  "description": "University Course Management System using Asynchronous Callbacks, ES6 Classes, and Array Manipulation",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Eren Ozan Yazar",
+  "license": "MIT"
+}
