@@ -23,8 +23,11 @@ fetchStudents((rawData) => {
   console.log("Testing Immutability:");
   console.log(`Original ID: ${students[0].id}`);
   console.log("Attempting to change ID to 999...");
-  // attempt to change id
-  students[0].id = 999;
+  try {
+    students[0].id = 999;
+  } catch (err) {
+    // In ES Module strict mode, assigning to a non-writable property raises a TypeError
+  }
   console.log(`Final ID: ${students[0].id} (Success: ID did not change)\n`);
 
   // Step 4: Analytical Calculations & Reporting
